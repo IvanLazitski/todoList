@@ -27,7 +27,7 @@ function applyFilter(filter: Filters, todoList: FieldData[]) {
         case Filters.Active:
             return todoList.filter((element) => !element.isDone);
         case Filters.Completed:
-            return todoList.filter((element) => element.isDone);
+            return todoList.filter((element) => element.isDone || element.isInput);
         default:
             return todoList;
     }

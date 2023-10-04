@@ -6,7 +6,7 @@ const Item = (props: FieldData) => {
     return (
         <>
             {props.isInput && (<ItemInput key={props.id} {...props} />)} 
-            {!props.isInput && (<ItemText key={props.id} buttonText='Remove' {...props} />)}
+            {!props.isInput && (<ItemText key={props.id} buttonText='Remove' {...props} isDone={props.isDone ?? false} />)}
         </>
     );
 }
