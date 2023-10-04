@@ -1,0 +1,9 @@
+.button {
+    color: blue;
+    background: none;
+    border: none;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
