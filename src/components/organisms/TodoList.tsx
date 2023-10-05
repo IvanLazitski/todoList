@@ -1,12 +1,11 @@
-import React from "react";
 import { TodoListProps } from "../../types/props/TodoListProps";
-import Item from "../moleculs/Item"
+import Item from "../moleculs/Item/Item"
 import css from "./styles.module.css"
 
 const TodoList = (props: TodoListProps) => {
     return (
         <div className={css.list}>
-            {props.todoList.map((element) => <div className={css.item}><Item key={element.id} {...element}/></div>).reverse()}
+            {props.todoList.map((element) => <div className={css.item} key={element.id}><Item key={element.id} {...element}/></div>).reverse()}
         </div>
     );
 }

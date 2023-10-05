@@ -2,18 +2,18 @@ import { useSelector } from "react-redux"
 import TodoList from "../organisms/TodoList";
 import Summary from "../moleculs/Summary/Summary";
 import { RootState } from "../../store/store";
-import { Filters } from "../../types/SummaryData";
+import { Filters } from "../../types/Filters";
 import { FieldData } from "../../types/FieldData";
 import css from "./styles.module.css"
 
 const TodoListApp = () => {
-    const todoList = useSelector((state: RootState) => state.todoList);
     const filter = useSelector((state: RootState) => state.filter);
+    const todoList = useSelector((state: RootState) => applyFilter(filter, state.todoList));
 
     return (
         <div className={css.app}>
             <div className={css.todoList}>
-                <TodoList todoList={applyFilter(filter, todoList)} />
+                <TodoList todoList={todoList} />
             </div>
             <Summary filter={filter} text={`${(todoList.length - 1).toString()} items left`} />
         </div>

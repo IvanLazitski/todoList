@@ -1,6 +1,6 @@
-import { FieldData } from "../../types/FieldData";
-import ItemInput from "./ItemInput";
-import ItemText from "./ItemText";
+import { FieldData } from "../../../types/FieldData";
+import ItemInput from "../ItemInput/ItemInput";
+import ItemText from "../ItemText/ItemText";
 
 const Item = (props: FieldData) => {
     return (

@@ -1,9 +1,11 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Filters } from '../../types/SummaryData'
+import { Filters } from '../../types/Filters'
+
+export const filterInitialState = Filters.All;
 
 export const filterSlice = createSlice({
     name: 'filter',
-    initialState: Filters.All,
+    initialState: filterInitialState,
     reducers: {
         changeFilter: (state: Filters, action: PayloadAction<Filters>) => {
             return action.payload;

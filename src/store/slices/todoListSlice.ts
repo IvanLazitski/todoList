@@ -6,11 +6,11 @@ import { BaseAction } from '../../types/actions/BaseAction';
 
 const initialFieldState: FieldData = { id: 0, text: '', isInput: true, isDone: false };
 
-const initialState: FieldData[] = [initialFieldState];
+export const initialTodoListState: FieldData[] = [initialFieldState];
 
 export const todoListSlice = createSlice({
-    name: 'filter',
-    initialState,
+    name: 'todoList',
+    initialState: initialTodoListState,
     reducers: {
         setText: (state: FieldData[], action: PayloadAction<SetTextAction>) => {
             const row = state.find(x => x.id === action.payload.id);

@@ -3,7 +3,7 @@ import Button from "../../atoms/Button/Button";
 import Text from "../../atoms/Text/Text";
 import { changeFilter } from "../../../store/slices/filterSlice";
 import { useDispatch } from "react-redux";
-import { Filters } from "../../../types/SummaryData";
+import { Filters } from "../../../types/Filters";
 import { removeCompleted } from "../../../store/slices/todoListSlice";
 import css from "./styles.module.css"
 

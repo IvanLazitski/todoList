@@ -1,7 +1,7 @@
-import Input from '../atoms/Input/Input'
-import Button from '../atoms/Button/Button';
-import { ItemInputProps } from '../../types/props/ItemInputProps';
-import { additem, setIsInput } from '../../store/slices/todoListSlice';
+import Input from '../../atoms/Input/Input'
+import Button from '../../atoms/Button/Button';
+import { ItemInputProps } from '../../../types/props/ItemInputProps';
+import { additem, setIsInput } from '../../../store/slices/todoListSlice';
 import { useDispatch } from 'react-redux';
 
 const ItemInput = (props: ItemInputProps) => {
