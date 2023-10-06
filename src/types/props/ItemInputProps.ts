@@ -1,4 +1,4 @@
-import { BaseProps } from "./BaseProps";
+import { BaseProps } from "./BaseProps.ts";
 
 export interface ItemInputProps extends BaseProps {
     text: string

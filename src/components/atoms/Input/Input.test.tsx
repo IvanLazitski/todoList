@@ -1,11 +1,11 @@
 import { render, fireEvent } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import configureStore, { MockStoreEnhanced } from 'redux-mock-store';
-import Input from './Input';
-import { setText } from '../../../store/slices/todoListSlice';
-import { RootState } from '../../../store/store';
+import Input from './Input.tsx';
+import { setText } from '../../../store/slices/todoListSlice.ts';
+import { RootState } from '../../../store/store.ts';
 import { AnyAction, Dispatch } from 'redux';
-import { Filters } from '../../../types/Filters';
+import { Filters } from '../../../types/Filters.ts';
 
 const testProps = {
   id: 1,

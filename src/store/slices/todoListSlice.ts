@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { FieldData } from '../../types/FieldData';
-import { SetTextAction } from '../../types/actions/SetTextAction';
-import { SetBooleanAction } from '../../types/actions/SetBooleanAction';
-import { BaseAction } from '../../types/actions/BaseAction';
+import { FieldData } from '../../types/FieldData.ts';
+import { SetTextAction } from '../../types/actions/SetTextAction.ts';
+import { SetBooleanAction } from '../../types/actions/SetBooleanAction.ts';
+import { BaseAction } from '../../types/actions/BaseAction.ts';
 
 const initialFieldState: FieldData = { id: 0, text: '', isInput: true, isDone: false };
 

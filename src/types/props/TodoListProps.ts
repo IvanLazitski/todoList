@@ -1,4 +1,4 @@
-import { FieldData } from "../FieldData";
+import { FieldData } from "../FieldData.ts";
 
 export interface TodoListProps {
     todoList: FieldData[],

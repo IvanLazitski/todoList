@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { setText } from "../../../store/slices/todoListSlice";
-import { BaseProps } from "../../../types/props/BaseProps";
+import { setText } from "../../../store/slices/todoListSlice.ts";
+import { BaseProps } from "../../../types/props/BaseProps.ts";
 import css from "./stules.module.css"
 
 const Input = (props: BaseProps) => {

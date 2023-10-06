@@ -1,6 +1,5 @@
 import { render, fireEvent } from '@testing-library/react';
-import Button from './Button';
-
+import Button from './Button.tsx';
 
 const mockOnClick = jest.fn();
 const testProps = {

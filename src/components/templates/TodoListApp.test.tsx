@@ -1,10 +1,9 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
-import TodoListApp from './TodoListApp';
-import { Filters } from '../../types/Filters';
-import { RootState } from '../../store/store';
+import TodoListApp from './TodoListApp.tsx';
+import { Filters } from '../../types/Filters.ts';
+import { RootState } from '../../store/store.ts';
 
 const initialState = {
   filter: Filters.All,

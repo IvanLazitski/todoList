@@ -1,5 +1,5 @@
-import { TodoListProps } from "../../types/props/TodoListProps";
-import Item from "../moleculs/Item/Item"
+import { TodoListProps } from "../../types/props/TodoListProps.ts";
+import Item from "../moleculs/Item/Item.tsx"
 import css from "./styles.module.css"
 
 const TodoList = (props: TodoListProps) => {

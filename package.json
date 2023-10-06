@@ -26,13 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject",
+    "lint": "./node_modules/.bin/eslint"
   },
   "browserslist": {
     "production": [
@@ -47,7 +42,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.22.15",
+    "@babel/eslint-plugin": "^7.22.10",
     "@types/redux-mock-store": "^1.0.4",
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-jest": "^27.4.2",
     "gh-pages": "^6.0.0"
   }
 }

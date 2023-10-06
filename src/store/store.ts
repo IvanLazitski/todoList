@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { filterReducer } from './slices/filterSlice'
-import { todoListReducer } from './slices/todoListSlice';
-import { localStorageMiddleware, persistedState } from './middlewares/localStorageMiddleware';
+import { filterReducer } from './slices/filterSlice.ts'
+import { todoListReducer } from './slices/todoListSlice.ts';
+import { localStorageMiddleware, persistedState } from './middlewares/localStorageMiddleware.ts';
 
 export const store = configureStore({
     reducer: {

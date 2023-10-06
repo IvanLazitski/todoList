@@ -1,9 +1,8 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
-import TodoList from './TodoList';
-import { Filters } from '../../types/Filters';
+import TodoList from './TodoList.tsx';
+import { Filters } from '../../types/Filters.ts';
 
 const testProps = {
   todoList: [

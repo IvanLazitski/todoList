@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux"
-import TodoList from "../organisms/TodoList";
-import Summary from "../moleculs/Summary/Summary";
-import { RootState } from "../../store/store";
-import { Filters } from "../../types/Filters";
-import { FieldData } from "../../types/FieldData";
+import TodoList from "../organisms/TodoList.tsx";
+import Summary from "../moleculs/Summary/Summary.tsx";
+import { RootState } from "../../store/store.ts";
+import { Filters } from "../../types/Filters.ts";
+import { FieldData } from "../../types/FieldData.ts";
 import css from "./styles.module.css"
 
 const TodoListApp = () => {

@@ -1,8 +1,9 @@
-import Input from '../../atoms/Input/Input'
-import Button from '../../atoms/Button/Button';
-import { ItemInputProps } from '../../../types/props/ItemInputProps';
-import { additem, setIsInput } from '../../../store/slices/todoListSlice';
+import Input from '../../atoms/Input/Input.tsx'
+import Button from '../../atoms/Button/Button.tsx';
+import { ItemInputProps } from '../../../types/props/ItemInputProps.ts';
+import { additem, setIsInput } from '../../../store/slices/todoListSlice.ts';
 import { useDispatch } from 'react-redux';
+import css from './styles.module.css'
 
 const ItemInput = (props: ItemInputProps) => {
     const dispatch = useDispatch();
@@ -14,7 +15,7 @@ const ItemInput = (props: ItemInputProps) => {
     return (
         <>
             <Input {...props} />
-            <Button onClick={handleClick} text='Save' />
+            <Button className={css.saveButton} onClick={handleClick} text='Save' />
         </>
     );
 }

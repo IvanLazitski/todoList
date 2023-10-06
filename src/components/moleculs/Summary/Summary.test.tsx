@@ -1,12 +1,12 @@
 import { render, fireEvent } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import configureStore, { MockStoreEnhanced } from 'redux-mock-store';
-import Summary from './Summary';
-import { Filters } from '../../../types/Filters';
-import { changeFilter } from '../../../store/slices/filterSlice';
-import { removeCompleted } from '../../../store/slices/todoListSlice';
-import { RootState } from '../../../store/store';
-import { SummaryProps } from '../../../types/props/SummaryProps';
+import Summary from './Summary.tsx';
+import { Filters } from '../../../types/Filters.ts';
+import { changeFilter } from '../../../store/slices/filterSlice.ts';
+import { removeCompleted } from '../../../store/slices/todoListSlice.ts';
+import { RootState } from '../../../store/store.ts';
+import { SummaryProps } from '../../../types/props/SummaryProps.ts';
 
 const testProps : SummaryProps = {
   text: 'Test Summary',

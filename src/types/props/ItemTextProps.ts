@@ -1,4 +1,4 @@
-import { BaseProps } from "./BaseProps";
+import { BaseProps } from "./BaseProps.ts";
 
 export interface ItemTextProps extends BaseProps {
     buttonText: string,

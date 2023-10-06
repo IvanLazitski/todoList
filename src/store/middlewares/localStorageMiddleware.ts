@@ -1,6 +1,6 @@
 import { Middleware } from 'redux';
-import { filterInitialState } from '../slices/filterSlice'
-import { initialTodoListState } from '../slices/todoListSlice';
+import { filterInitialState } from '../slices/filterSlice.ts'
+import { initialTodoListState } from '../slices/todoListSlice.ts';
 
 export const localStorageMiddleware: Middleware = (store) => (next) => (action) => {
   const result = next(action);

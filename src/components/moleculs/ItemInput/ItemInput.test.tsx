@@ -1,9 +1,9 @@
 import { render, fireEvent } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import configureStore, { MockStoreEnhanced } from 'redux-mock-store';
-import ItemInput from './ItemInput';
-import { RootState } from '../../../store/store';
-import { Filters } from '../../../types/Filters';
+import ItemInput from './ItemInput.tsx';
+import { RootState } from '../../../store/store.ts';
+import { Filters } from '../../../types/Filters.ts';
 
 const testProps = {
   id: 1,

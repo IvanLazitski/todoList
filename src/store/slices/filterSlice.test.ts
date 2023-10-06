@@ -1,5 +1,5 @@
-import { changeFilter, filterReducer } from './filterSlice';
-import { Filters } from '../../types/Filters';
+import { changeFilter, filterReducer } from './filterSlice.ts';
+import { Filters } from '../../types/Filters.ts';
 
 describe('filterSlice', () => {
   it('should return the initial state', () => {

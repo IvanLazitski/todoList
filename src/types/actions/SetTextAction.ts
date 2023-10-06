@@ -1,4 +1,4 @@
-import { BaseAction } from "./BaseAction";
+import { BaseAction } from "./BaseAction.ts";
 
 export interface SetTextAction extends BaseAction {
     text: string

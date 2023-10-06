@@ -1,5 +1,5 @@
-import { Filters } from "../Filters";
-import { TextProps } from "./TextProps";
+import { Filters } from "../Filters.ts";
+import { TextProps } from "./TextProps.ts";
 
 export interface SummaryProps extends TextProps {
     filter: Filters

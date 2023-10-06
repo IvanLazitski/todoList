@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import Item from './Item';
+import Item from './Item.tsx';
 
 jest.mock('../ItemInput/ItemInput', () => ({ __esModule: true, default: () => <div>Mocked ItemInput</div> }));
 jest.mock('../ItemText/ItemText', () => ({ __esModule: true, default: () => <div>Mocked ItemText</div> }));

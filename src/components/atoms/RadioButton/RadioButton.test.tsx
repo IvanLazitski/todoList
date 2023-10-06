@@ -1,5 +1,5 @@
 import { render, fireEvent } from '@testing-library/react';
-import RadioButton from './RadioButton';
+import RadioButton from './RadioButton.tsx';
 
 describe('RadioButton component', () => {
   it('renders correctly with defaultChecked', () => {

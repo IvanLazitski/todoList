@@ -1,3 +1,11 @@
 .summary {
     margin-top: 10px;
 }
+
+.activeFilter {
+    color: red;
+}
+
+.notActiveFilter {
+    color: blue;
+}
